@@ -14,8 +14,8 @@ public class Garazs extends Auto {
     private ArrayList<String> jarmu;
     private boolean be,ki;
 
-    public Garazs(UUID id, String szin, int rendszam, int ferohely, int ar, ArrayList<String> jarmu, boolean be, boolean ki) {
-        super(id, szin, rendszam, ferohely, ar);
+    public Garazs(String nev, UUID id, String szin, int ferohely, int ar, String rendszam, ArrayList<String> jarmu, boolean be, boolean ki) {
+        super(nev, id, szin, ferohely, ar, rendszam);
         this.jarmu = new ArrayList<>();
         this.be = be;
         this.ki = ki;

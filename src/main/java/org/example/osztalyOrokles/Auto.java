@@ -59,9 +59,8 @@ public class Auto extends Jarmu implements Comparable<Auto>{
         return 0;
     }
 
-//    @Override
-//    protected Object clone() throws CloneNotSupportedException {
-//        Auto ujAuto = new Auto(UUID.randomUUID(), this.getId());
-//        return ujAuto;
-//    }
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
