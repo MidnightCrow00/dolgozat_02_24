@@ -5,7 +5,7 @@ import java.util.UUID;
 public class Jarmu extends Tulajdonos{
     private UUID id;
     private String szin;
-
+//
     public Jarmu(String nev, UUID id, String szin) {
         super(nev);
         this.id = id;

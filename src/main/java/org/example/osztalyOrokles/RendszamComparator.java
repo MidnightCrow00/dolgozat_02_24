@@ -2,7 +2,7 @@ package org.example.osztalyOrokles;
 
 import java.text.Collator;
 import java.util.Comparator;
-
+//
 public class RendszamComparator implements Comparator<Auto> {
 
     @Override

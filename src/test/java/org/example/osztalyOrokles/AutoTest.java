@@ -1,7 +1,7 @@
 package org.example.osztalyOrokles;
 
 import org.junit.jupiter.api.Test;
-
+//
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,6 +19,6 @@ public class AutoTest {
     @Test
     public void testRendszamNagyobbMintHatBetuVagyKisebb(){
         Auto a2 = new Auto("Márta",UUID.randomUUID(),"piros", 5,30000,"123LK");
-        //assertThrows(a2.setRendszam(a2.getRendszam()),() -> {}, "Rendszám nem megfelelö");
+        //assertThrows(a2.setRendszam(a2.getRendszam()),() -> ,"Rendszám nem megfelelö");
     }
 }

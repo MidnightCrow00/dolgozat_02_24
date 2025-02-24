@@ -1,7 +1,7 @@
 package org.example.osztalyOrokles;
 
 import java.util.UUID;
-
+//
 public class Auto extends Jarmu implements Comparable<Auto>{
     private int ferohely, ar;
     private String rendszam;

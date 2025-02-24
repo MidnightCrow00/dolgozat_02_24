@@ -1,5 +1,5 @@
 package org.example.adatszerkezet;
-
+//
 import org.example.osztalyOrokles.Auto;
 import org.junit.jupiter.api.Test;
 
@@ -23,6 +23,7 @@ public class GarazsTest {
     }
     @Test
     public void testGetterNemMukodikSetterkent(){
+        Auto a2 = new Auto("Márta",UUID.randomUUID(),"piros", 5,30000,"123LKH");
 
     }
 }

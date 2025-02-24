@@ -1,9 +1,9 @@
 package org.example.adatszerkezet;
 
 import org.example.osztalyOrokles.Auto;
-
+//
 import java.io.IOException;
-import java.lang.reflect.Array;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
@@ -50,19 +50,23 @@ public class Garazs extends Auto {
         this.ki = ki;
     }
     public void kiir(){
-        Garazs g1 =new Garazs("Mária", UUID.randomUUID(), "piros", 5, 4000000, "123LKH",new ArrayList<>(),false,true);
-        Garazs g2 =new Garazs("Mária", UUID.randomUUID(), "piros", 5, 4000000, "123LKH",new ArrayList<>(),false,true);
-        Garazs g3 =new Garazs("Mária", UUID.randomUUID(), "piros", 5, 4000000, "123LKH",new ArrayList<>(),false,true);
+        Auto g1 =new Garazs("Mária", UUID.randomUUID(), "piros", 5, 4000000, "123LKH",new ArrayList<>(),false,true);
+        Auto g2 =new Garazs("Mária", UUID.randomUUID(), "piros", 5, 4000000, "123LKH",new ArrayList<>(),false,true);
+        Auto g3 =new Garazs("Mária", UUID.randomUUID(), "piros", 5, 4000000, "123LKH",new ArrayList<>(),false,true);
 
-        Garazs [] jarmuvek ={g1,g3, g2};
-        Array.sort(jarmuvek, Auto.rendezAr());
-        Array.sort(jarmuvek, Auto.rendezRendszam());
-        System.out.println("Rendezés ár és rendszám szerint."+ jarmuvek+ "férőhely:"+ getFerohely());
+        Auto [] jarmuvek ={g1,g3, g2};
+        //Array.sort(jarmuvek, Auto.rendezAr());
+        //Array.sort(jarmuvek, Auto.rendezRendszam());
+        kiirLista("",jarmuvek);
 
 
     }
-    private <T> void kiirLista(String rendszam, List<T> lista){
-        
+    private <T> void kiirLista(String rendszam, T[] lista){
+        System.out.println(rendszam);
+        for (T elem:lista){
+            System.out.println(elem);
+        }
+        System.out.println();
     }
     //Iterable<T>{
 

@@ -2,7 +2,7 @@ package org.example.osztalyOrokles;
 
 public class Tulajdonos {
     private String nev;
-
+//
     public Tulajdonos(String nev) {
         this.nev = nev;
     }
