@@ -12,6 +12,7 @@ public class Auto extends Jarmu implements Comparable<Auto>{
         this.ar = ar;
         this.rendszam = rendszam;
         setRendszam(rendszam);
+        setFerohely(ferohely);
     }
 
 
@@ -47,7 +48,11 @@ public class Auto extends Jarmu implements Comparable<Auto>{
     }
 
     public void setFerohely(int ferohely) {
-        this.ferohely = ferohely;
+        if (ferohely == 5){
+            throw new IllegalArgumentException();
+        }else {
+            this.ferohely = ferohely;
+        }
     }
 
     public void setAr(int ar) {
